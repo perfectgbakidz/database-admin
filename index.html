@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartment Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Apartment Manager</h1>
+
+        <form id="apartment-form">
+            <h2>Add New Apartment</h2>
+            <label>Area: <input type="text" id="area" required></label>
+            <label>Water Source: <input type="text" id="water_source"></label>
+            <label>Electricity Meter: <input type="text" id="electricity_meter"></label>
+            <label>Apartment Type: <input type="text" id="apartment_type"></label>
+            <label>Private Toilet: <input type="checkbox" id="private_toilet"></label>
+            <label>Rent Per Month: <input type="number" id="rent_per_month" required></label>
+            <label>Yearly Payment: <input type="number" id="yearly_payment" required></label>
+            <label>Total Price: <input type="number" id="total_price" required></label>
+            <label>Agent Fee: <input type="number" id="agent_fee" required></label>
+            <label>Inspection Fee: <input type="number" id="inspection_fee" required></label>
+            <label>Electricity Included: <input type="checkbox" id="electricity_included"></label>
+            
+            <label>Pictures (Images): <input type="file" id="pictures" multiple accept="image/*"></label>
+            <label>Videos: <input type="file" id="videos" multiple accept="video/*"></label>
+            
+            <button type="submit">Add Apartment</button>
+        </form>
+
+        <h2>Apartment List</h2>
+        <div id="apartment-list"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
